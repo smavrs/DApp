@@ -1,0 +1,66 @@
+.itemcontainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 250px; /* Set a fixed height for the square shape */
+    width: 250px;
+    border: solid 1px silver;
+  }
+  
+  .heading {
+    margin: 0;
+    padding: 5px;
+    text-align: left;
+    background-color: rgb(218, 218, 218);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .imgcontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure overflow is hidden to prevent large images from breaking the layout */
+  }
+  
+  .imgcontainer .itemimage {
+    max-width: 80%; /* Adjust the value for the desired size */
+    max-height: 80%; /* Adjust the value for the desired size */
+    object-fit: cover; /* Adjust as needed: cover, contain, etc. */
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .bidButton {
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid silver;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0 10px 10px; /* Add margin to the left */
+  }
+  
+  button:hover {
+    background-color: rgb(203, 203, 203);
+  }
+  
+  .bidButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .statustext {
+    margin: 10px;
+    font-size: 40px;
+    color: blue;
+  }

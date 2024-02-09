@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+.content {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.prizecontainer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.itemcard {
+  margin: 10px;
+}
+
+.actionContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.userContainer,
+.ownerContainer {
+  margin-top: 20px;
+}
+
+/* Add any other styles you may need */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+/* Add these styles for buttons */
+button {
+  margin-top: 10px; /* Add space above each button */
+}
+
+.userContainer button,
+.ownerContainer button {
+  display: block; /* Make buttons a block element */
+  margin-right: 0; /* Reset margin for buttons */
+}
+
+button {
+  margin-top: 10px; /* Add space above each button */
+  padding: 10px 20px; /* Add padding for better appearance */
+  border: none; /* Remove default button border */
+  border-radius: 4px;
+  cursor: pointer; /* Add pointer cursor for better user experience */
+  transition: background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+/* Style Reveal and Am I Winner buttons as light blue */
+.revealButton,
+.winnerButton {
+  background-color: skyblue;
+  color: #fff; /* Set text color to white */
+}
+
+/* Style Withdraw and Declare Winner buttons as light green */
+.withdrawButton,
+.declareButton,
+.newCycleButton {
+  background-color: lightgreen;
+  color: #fff; /* Set text color to white */
+}
+
+.destroyButton {
+  background-color: rgb(255, 53, 53);
+  color: #fff; /* Set text color to white */
+}
+
+/* Add darker color on hover */
+.revealButton:hover,
+.winnerButton:hover {
+  background-color: #4e6c88; /* Darker blue on hover */
+}
+
+.withdrawButton:hover,
+.declareButton:hover,
+.newCycleButton:hover {
+  background-color: #4e804f; /* Darker green on hover */
+}
+
+.destroyButton:hover {
+  background-color: #871111; /* Darker green on hover */
+}
+
+.userContainer button,
+.ownerContainer button {
+  display: block; /* Make buttons a block element */
+  margin-right: 0; /* Reset margin for buttons */
+}
+
+.connectWalletContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+.walletConnectBtn {
+  background-color: rgb(0, 140, 255);
+  color: #fff;
+}
+
+.winnerButton:disabled,
+.declareButton:disabled,
+.withdrawButton:disabled,
+.newCycleButton:disabled,
+.destroyButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
