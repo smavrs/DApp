@@ -1,5 +1,6 @@
 {
   "name": "dapp-lottery",
+  "homepage": "https://smavrs.github.com/DApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
