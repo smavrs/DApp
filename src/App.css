@@ -28,8 +28,6 @@
   margin-top: 20px;
 }
 
-/* Add any other styles you may need */
-
 form {
   display: flex;
   flex-direction: column;
@@ -44,73 +42,69 @@ input {
   margin-bottom: 10px;
 }
 
-/* Add these styles for buttons */
 button {
-  margin-top: 10px; /* Add space above each button */
+  margin-top: 10px; 
 }
 
 .userContainer button,
 .ownerContainer button {
-  display: block; /* Make buttons a block element */
-  margin-right: 0; /* Reset margin for buttons */
+  display: block; 
+  margin-right: 0; 
 }
 
 button {
-  margin-top: 10px; /* Add space above each button */
-  padding: 10px 20px; /* Add padding for better appearance */
-  border: none; /* Remove default button border */
+  margin-top: 10px;
+  padding: 10px 20px; 
+  border: none;
   border-radius: 4px;
-  cursor: pointer; /* Add pointer cursor for better user experience */
-  transition: background-color 0.3s ease; /* Add smooth transition effect */
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
 }
 
-/* Style Reveal and Am I Winner buttons as light blue */
 .revealButton,
 .winnerButton {
   background-color: skyblue;
-  color: #fff; /* Set text color to white */
+  color: #fff; 
 }
 
-/* Style Withdraw and Declare Winner buttons as light green */
 .withdrawButton,
 .declareButton,
 .newCycleButton {
   background-color: lightgreen;
-  color: #fff; /* Set text color to white */
+  color: #fff;
 }
 
 .destroyButton {
   background-color: rgb(255, 53, 53);
-  color: #fff; /* Set text color to white */
+  color: #fff; 
 }
 
-/* Add darker color on hover */
 .revealButton:hover,
 .winnerButton:hover {
-  background-color: #4e6c88; /* Darker blue on hover */
+  background-color: #4e6c88; 
 }
 
 .withdrawButton:hover,
 .declareButton:hover,
 .newCycleButton:hover {
-  background-color: #4e804f; /* Darker green on hover */
+  background-color: #4e804f; 
 }
 
 .destroyButton:hover {
-  background-color: #871111; /* Darker green on hover */
+  background-color: #871111; 
 }
 
 .userContainer button,
 .ownerContainer button {
-  display: block; /* Make buttons a block element */
-  margin-right: 0; /* Reset margin for buttons */
+  display: block; 
+  margin-right: 0; 
 }
 
 .connectWalletContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Set the height to 100% of the viewport height */
+  height: 100vh; 
 }
 
 .walletConnectBtn {
