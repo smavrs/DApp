@@ -46,7 +46,6 @@ function App() {
 
   const LotteryContract = require("./smartcontract/contracts/Lottery2.sol/Lottery2.json");
   const LotteryContractAbi = LotteryContract.abi;
-  // const env.LOTTERY_ADDRESS = "0x04eda1A150Ed2a201Af65A65cA375227330c45b1";
   const LOTTERY_ADDRESS = "0xa9D2C8054e75F5F126fF9CF1130963D160D1fD12";
 
   const connectWallet = async () => {
@@ -206,58 +205,6 @@ function App() {
     }
   };
 
-  // const checkIfWinner = async () => {
-  //   try {
-  //     // Ensure that the lottery has been done (stage == 2)
-  //     const web3 = new Web3(window.ethereum);
-  //     let lotteryContract = new web3.eth.Contract(
-  //       LotteryContractAbi,
-  //       LOTTERY_ADDRESS
-  //     );
-  //     const currentStage = Number(await lotteryContract.methods.stage().call());
-
-  //     // console.log("currentStage:", currentStage);
-
-  //     if (currentStage !== 2) {
-  //       // If the lottery is not done, set the winning items to an empty array
-  //       setUserWinningItems([]);
-  //       return;
-  //     }
-
-  //     // const currentRound = await lotteryContract.methods.lotteryNum().call();
-
-  //     // Determine the user's winning items
-  //     const winningItems = [];
-
-  //     if (currentStage === 2) {
-  //       const carWinner = await lotteryContract.methods
-  //         .checkWinner(0, 0)
-  //         .call();
-  //       const phoneWinner = await lotteryContract.methods
-  //         .checkWinner(0, 1)
-  //         .call();
-  //       const computerWinner = await lotteryContract.methods
-  //         .checkWinner(0, 2)
-  //         .call();
-
-  //       if (carWinner === connectedWalletAddress) {
-  //         winningItems.push(0);
-  //       }
-  //       if (phoneWinner === connectedWalletAddress) {
-  //         winningItems.push(1);
-  //       }
-  //       if (computerWinner === connectedWalletAddress) {
-  //         winningItems.push(2);
-  //       }
-  //     }
-
-  //     setUserWinningItems(winningItems);
-  //     setShowWinner(true);
-  //   } catch (error) {
-  //     console.error("Error checking if winner:", error.message);
-  //   }
-  // };
-
   const checkIfWinner = async () => {
     try {
     // Ensure that the lottery has been done (stage == 2)
@@ -388,34 +335,6 @@ function App() {
       console.error("Error during destroyContract:", error.message);
     }
   };
-
-  // useEffect(() => {
-  //   getOwner();
-  //   getLotteryStage();
-  //   getBidCounts();
-  //   getContractBalance();
-
-  //   setIsDeclareWinnersDisabled(
-  //     lotteryStage !== 1 || connectedWalletAddress !== beneficiaryAddress
-  //   );
-  //   setIsWithdrawBalanceDisabled(
-  //     lotteryStage !== 2 || connectedWalletAddress !== beneficiaryAddress
-  //   );
-  //   setIsStartNewCycleDisabled(
-  //     lotteryStage !== 2 || connectedWalletAddress !== beneficiaryAddress
-  //   );
-  //   setIsDestroyDisabled(connectedWalletAddress !== beneficiaryAddress);
-
-  //   // Refresh bid counts and contract balance every 30 seconds (adjust the interval as needed)
-  //   const refreshInterval = setInterval(() => {
-  //     getBidCounts();
-  //     getContractBalance();
-  //     getLotteryStage();
-  //   }, 30000);
-
-  //   // Clear the interval when the component is unmounted
-  //   return () => clearInterval(refreshInterval);
-  // }, [connectedWalletAddress]); // Only re-run the effect when connectedWalletAddress changes
 
   useEffect(() => {
     getOwner();
