@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 250px; /* Set a fixed height for the square shape */
+    height: 250px; 
     width: 250px;
     border: solid 1px silver;
   }
@@ -24,13 +24,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Ensure overflow is hidden to prevent large images from breaking the layout */
+    overflow: hidden; 
   }
   
   .imgcontainer .itemimage {
-    max-width: 80%; /* Adjust the value for the desired size */
-    max-height: 80%; /* Adjust the value for the desired size */
-    object-fit: cover; /* Adjust as needed: cover, contain, etc. */
+    max-width: 80%; 
+    max-height: 80%; 
+    object-fit: cover;
   }
   
   .info {
@@ -47,7 +47,7 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin: 10px 0 10px 10px; /* Add margin to the left */
+    margin: 10px 0 10px 10px; 
   }
   
   button:hover {
